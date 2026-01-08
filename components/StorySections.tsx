@@ -19,10 +19,10 @@ export const About: React.FC = () => {
 
             <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
                 <motion.div 
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     className="order-2 md:order-1 relative"
                 >
                     {/* Decorative accent */}
@@ -61,10 +61,10 @@ export const About: React.FC = () => {
                 </motion.div>
                 
                 <motion.div 
-                    initial={{ opacity: 0, scale: 0.98 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                     className="order-1 md:order-2 relative flex justify-center md:justify-end"
                 >
                     <div className="relative w-full max-w-[340px] aspect-[3/4]">
@@ -219,13 +219,19 @@ export const Heritage: React.FC = () => {
   return (
     <section id="heritage" className="relative py-24 bg-[#FDFCF8] overflow-hidden">
         {/* Heritage Visual Overlay */}
-        <div className="absolute inset-0 z-0 opacity-[0.08] mix-blend-multiply pointer-events-none">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.08 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 z-0 mix-blend-multiply pointer-events-none"
+        >
             <img 
                 src="https://images.unsplash.com/photo-1590732823183-f9a8194a917e?q=80&w=2000&auto=format&fit=crop" 
                 className="w-full h-full object-cover grayscale" 
                 alt="Heritage Texture"
             />
-        </div>
+        </motion.div>
         
         {/* Subtle Jali/Lattice Pattern Background */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
