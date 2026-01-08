@@ -305,6 +305,22 @@ export const Heritage: React.FC = () => {
                             Our Story
                         </Button>
                     </div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.2 }}
+                        className="mt-12 relative max-w-md mx-auto md:mx-0"
+                    >
+                        <div className="relative aspect-[16/10] rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
+                            <img 
+                                src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr.jpeg" 
+                                alt="Heritage Craftsmanship"
+                                className="w-full h-full object-cover grayscale-[0.1] hover:scale-105 transition-transform duration-1000"
+                            />
+                        </div>
+                    </motion.div>
                 </motion.div>
 
             </div>
