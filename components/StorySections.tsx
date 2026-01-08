@@ -6,7 +6,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 export const About: React.FC = () => {
     return (
-        <Section id="about" className="py-12 md:py-20 bg-[#FAFAF9] relative overflow-hidden">
+        <Section id="about" className="py-8 md:py-20 bg-[#FAFAF9] relative overflow-hidden">
             {/* Minimalist Background Geometry */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                  <motion.div 
@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                  <div className="absolute top-[10%] left-[10%] w-[1px] h-[30%] bg-gradient-to-b from-transparent via-amber-900/10 to-transparent" />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-10 md:gap-24 items-center relative z-10">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-24 items-center relative z-10">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -28,12 +28,12 @@ export const About: React.FC = () => {
                     {/* Decorative accent */}
                     <div className="absolute -left-6 top-2 w-1 h-12 bg-[#1C1917] hidden md:block" />
 
-                    <span className="text-stone-400 text-[9px] md:text-[10px] font-bold tracking-[0.4em] uppercase mb-4 md:mb-6 flex items-center gap-3">
+                    <span className="text-stone-400 text-[8px] md:text-[10px] font-bold tracking-[0.4em] uppercase mb-3 md:mb-6 flex items-center gap-3">
                         <span className="w-6 h-[1px] bg-stone-300"></span>
                         Our Philosophy
                     </span>
                     
-                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-[1.1] tracking-tight">
+                    <h2 className="text-2xl md:text-6xl font-serif text-stone-900 mb-4 md:mb-8 leading-[1.1] tracking-tight">
                         Essence over<br/>
                         <span className="italic text-stone-400 font-light relative inline-block">
                             Excess.
@@ -43,11 +43,11 @@ export const About: React.FC = () => {
                         </span>
                     </h2>
                     
-                    <div className="space-y-4 md:space-y-6">
-                        <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed">
+                    <div className="space-y-3 md:space-y-6">
+                        <p className="text-stone-600 text-[14px] md:text-lg font-light leading-relaxed">
                            In a world of noise, we choose silence. We believe true luxury lies not in what you add, but in what you take away. 
                         </p>
-                        <p className="text-stone-500 text-[13px] md:text-sm font-medium leading-relaxed tracking-wide border-l border-amber-900/20 pl-5 md:pl-6 py-1.5 md:py-2">
+                        <p className="text-stone-500 text-[12px] md:text-sm font-medium leading-relaxed tracking-wide border-l border-amber-900/20 pl-4 md:pl-6 py-1 md:py-2">
                            Every bottle is a study in restraint—a quiet conversation between the wearer and the world, composed of only the most essential notes.
                         </p>
                     </div>
@@ -99,7 +99,7 @@ const FeatureCard: React.FC<{ title: string; subtitle: string; Icon: React.Eleme
         >
             <motion.div
                 whileHover={{ y: -8 }}
-                className="relative w-[300px] h-[400px] rounded-[2rem] overflow-hidden shadow-luxury flex flex-col items-center justify-end p-8 group bg-stone-900"
+                className="relative w-[240px] md:w-[300px] h-[320px] md:h-[400px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-luxury flex flex-col items-center justify-end p-6 md:p-8 group bg-stone-900"
             >
                 <div className="absolute inset-0 z-0">
                     <img src={image} alt={title} className="w-full h-full object-cover opacity-80 transition-transform duration-1000 ease-out group-hover:scale-110" />
@@ -124,25 +124,25 @@ const FeatureCard: React.FC<{ title: string; subtitle: string; Icon: React.Eleme
 export const WhyAmary: React.FC = () => {
   const features = [
     { 
-        title: "Long-Lasting Character", 
+        title: "Long-Lasting", 
         subtitle: "Fragrances that stay refined throughout the day", 
         icon: Hourglass, 
         image: "https://ik.imagekit.io/jabzmiuta/Whisk_2033cb3f85c3ab488a84b394a0286d53dr.jpeg" 
     },
     { 
-        title: "Thoughtfully Composed", 
+        title: "Thoughtful", 
         subtitle: "Every note placed with intention and balance", 
         icon: Scale, 
         image: "https://ik.imagekit.io/jabzmiuta/Whisk_9f38e062ce5363aae724913538680793dr.jpeg" 
     },
     { 
-        title: "Quiet, Modern Luxury", 
+        title: "Quiet Luxury", 
         subtitle: "Designed to be noticed, never loud", 
         icon: FlaskConical, 
         image: "https://ik.imagekit.io/jabzmiuta/Whisk_a42528fd61591eba5764e9a0f5fe32b6dr.jpeg" 
     },
     { 
-        title: "Made to Endure", 
+        title: "Enduring", 
         subtitle: "Crafted for consistency, depth, and time", 
         icon: Ear, 
         image: "https://ik.imagekit.io/jabzmiuta/Whisk_ce23003844db9c4ba7846637e4cbebe9dr.jpeg" 
@@ -150,15 +150,15 @@ export const WhyAmary: React.FC = () => {
   ];
 
   return (
-    <section id="why-amary" className="relative py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-            <span className="text-stone-400 uppercase tracking-[0.3em] text-[10px] font-bold block mb-3">Our Distinction</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-stone-900 tracking-tight">Why Amary</h2>
+    <section id="why-amary" className="relative py-12 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16">
+            <span className="text-stone-400 uppercase tracking-[0.3em] text-[8px] md:text-[10px] font-bold block mb-2 md:mb-3">Our Distinction</span>
+            <h2 className="text-2xl md:text-5xl font-serif text-stone-900 tracking-tight">Why Amary</h2>
         </div>
 
         <div className="w-full overflow-hidden">
-            <div className="flex gap-6 overflow-x-auto px-6 pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center">
+            <div className="flex gap-4 md:gap-6 overflow-x-auto px-4 md:px-6 pb-8 md:pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center">
                 {features.map((feature, idx) => (
                     <FeatureCard key={idx} index={idx} title={feature.title} subtitle={feature.subtitle} Icon={feature.icon} image={feature.image} />
                 ))}
@@ -217,7 +217,7 @@ export const Reviews: React.FC = () => {
 
 export const Heritage: React.FC = () => {
   return (
-    <section id="heritage" className="relative py-16 md:py-24 bg-[#FDFCF8] overflow-hidden">
+    <section id="heritage" className="relative py-10 md:py-24 bg-[#FDFCF8] overflow-hidden">
         {/* Heritage Visual Overlay */}
         <motion.div 
             initial={{ opacity: 0 }}
@@ -253,9 +253,9 @@ export const Heritage: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="mb-10 md:mb-16 flex justify-center"
+                    className="mb-8 md:mb-16 flex justify-center"
                 >
-                    <div className="relative w-full max-w-[320px] md:max-w-[400px] aspect-[3/4] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
+                    <div className="relative w-full max-w-[280px] md:max-w-[400px] aspect-[3/4] rounded-[1.2rem] md:rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
                         <img 
                             src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr.jpeg" 
                             alt="Heritage Craftsmanship"
@@ -272,22 +272,22 @@ export const Heritage: React.FC = () => {
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     className="px-2 md:px-0"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-900/10 bg-white/50 mb-6 md:mb-8 backdrop-blur-sm">
-                        <span className="w-2 h-2 rounded-full bg-amber-600/60"></span>
-                        <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-amber-900/60">Legacy</span>
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-amber-900/10 bg-white/50 mb-4 md:mb-8 backdrop-blur-sm">
+                        <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-amber-600/60"></span>
+                        <span className="text-[8px] md:text-[9px] font-bold tracking-[0.3em] uppercase text-amber-900/60">Legacy</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-tight">
+                    <h2 className="text-2xl md:text-6xl font-serif text-stone-900 mb-4 md:mb-8 leading-tight">
                         Rooted in <br/>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800">Heritage.</span>
                     </h2>
                     
-                    <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed mb-8 max-w-lg mx-auto">
+                    <p className="text-stone-600 text-[14px] md:text-lg font-light leading-relaxed mb-6 md:mb-8 max-w-lg mx-auto">
                         Inspired by the royal durbars and ancient perfumery traditions of India. We blend sacred ingredients—Sandalwood, Saffron, Jasmine—with modern molecular precision.
                     </p>
                     
                     <div className="flex justify-center">
-                        <Button variant="outline" className="border-amber-900/20 text-amber-900 hover:bg-amber-50 text-[10px] px-8 py-3 h-auto">
+                        <Button variant="outline" className="border-amber-900/20 text-amber-900 hover:bg-amber-50 text-[9px] md:text-[10px] px-6 md:px-8 py-2 md:py-3 h-auto">
                             Our Story
                         </Button>
                     </div>

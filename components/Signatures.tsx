@@ -50,7 +50,7 @@ const FragranceCard: React.FC<{ perfume: typeof PERFUMES[0]; index: number }> = 
         onClick={() => navigate(`/perfume/${perfume.id}`)}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="group relative h-[300px] md:h-[500px] w-full cursor-pointer rounded-[30px] bg-stone-900 shadow-lg transition-all duration-300 overflow-hidden border border-white/10"
+        className="group relative h-[220px] md:h-[500px] w-full cursor-pointer rounded-[20px] md:rounded-[30px] bg-stone-900 shadow-lg transition-all duration-300 overflow-hidden border border-white/10"
       >
         {/* Background Image */}
         <div className="absolute inset-0 bg-stone-800">
@@ -86,20 +86,20 @@ export const Signatures: React.FC = () => {
   const gridItems = PERFUMES.slice(0, 4);
 
   return (
-    <Section id="collections" className="py-6 md:py-12">
-      <div className="text-center mb-6 md:mb-8 max-w-2xl mx-auto px-4">
+    <Section id="collections" className="py-4 md:py-12">
+      <div className="text-center mb-4 md:mb-8 max-w-2xl mx-auto px-4">
          <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
          >
-            <span className="text-stone-500 text-[9px] md:text-[10px] font-bold tracking-[0.4em] uppercase mb-1 md:mb-2 block">Signature Series</span>
-            <h2 className="text-3xl md:text-5xl font-serif text-stone-800 mb-1 tracking-tight">The Collection</h2>
+            <span className="text-stone-500 text-[8px] md:text-[10px] font-bold tracking-[0.4em] uppercase mb-1 md:mb-2 block">Signature Series</span>
+            <h2 className="text-2xl md:text-5xl font-serif text-stone-800 mb-1 tracking-tight">The Collection</h2>
          </motion.div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 md:gap-8 max-w-5xl mx-auto px-3 md:px-2 mb-8 md:mb-10">
+      <div className="grid grid-cols-2 gap-2 md:gap-8 max-w-5xl mx-auto px-2 md:px-2 mb-6 md:mb-10">
         {gridItems.map((perfume, index) => (
           <FragranceCard key={perfume.id} perfume={perfume} index={index} />
         ))}

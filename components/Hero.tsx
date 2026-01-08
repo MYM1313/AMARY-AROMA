@@ -60,18 +60,18 @@ export const Hero: React.FC = () => {
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-             className="relative w-full max-w-3xl text-center py-5 md:py-8 px-6 md:px-8 rounded-[1.5rem] md:rounded-[2rem] border border-white/60 shadow-luxury mb-6 md:mb-8 overflow-hidden"
+             className="relative w-full max-w-3xl text-center py-4 md:py-8 px-5 md:px-8 rounded-[1.2rem] md:rounded-[2rem] border border-white/60 shadow-luxury mb-4 md:mb-8 overflow-hidden"
           >
               {/* Stronger Blur Overlay: White/30 with blur-xl */}
               <div className="absolute inset-0 bg-white/30 backdrop-blur-xl z-[-1]" />
               
-              <h1 className="font-serif text-4xl md:text-7xl lg:text-[5.5rem] text-[#1C1917] font-medium leading-[1.1] md:leading-[1.05] tracking-tighter mb-4 md:mb-6 opacity-100">
+              <h1 className="font-serif text-3xl md:text-7xl lg:text-[5.5rem] text-[#1C1917] font-medium leading-[1.1] md:leading-[1.05] tracking-tighter mb-3 md:mb-6 opacity-100">
                 Crafted Scents.<br/>
                 <span className="italic text-[#44403C]">Quiet Luxury.</span>
               </h1>
 
               <div className="relative">
-                <p className="text-[#1C1917] text-base md:text-xl font-medium max-w-xl mx-auto leading-relaxed opacity-100 px-2 md:px-0">
+                <p className="text-[14px] md:text-xl font-medium max-w-xl mx-auto leading-relaxed text-[#1C1917] opacity-100 px-2 md:px-0">
                   Experience an olfactory journey where every note is a whispered secret of stone and heritage.
                 </p>
               </div>
