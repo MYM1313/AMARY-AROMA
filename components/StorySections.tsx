@@ -264,7 +264,7 @@ export const Heritage: React.FC = () => {
                              className="absolute bottom-10 -right-4 md:-right-10 w-48 h-64 bg-white rounded-[2rem] shadow-luxury p-2 border border-white"
                         >
                             <div className="w-full h-full rounded-[1.5rem] overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1598555819702-892697b0a3c2?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-60" alt="Texture" />
+                                <img src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr_1767922359535.jpeg" className="w-full h-full object-cover grayscale opacity-60" alt="Rooted in Heritage" />
                             </div>
                         </motion.div>
                     </div>
