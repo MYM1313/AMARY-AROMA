@@ -86,8 +86,8 @@ export const Signatures: React.FC = () => {
   const gridItems = PERFUMES.slice(0, 4);
 
   return (
-    <Section id="collections" className="py-8 md:py-12">
-      <div className="text-center mb-8 max-w-2xl mx-auto px-4">
+    <Section id="collections" className="py-12 md:py-24">
+      <div className="text-center mb-12 md:mb-16 max-w-2xl mx-auto px-4">
          <motion.div
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -95,14 +95,18 @@ export const Signatures: React.FC = () => {
            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
          >
             <span className="text-stone-500 text-[10px] font-bold tracking-[0.4em] uppercase mb-2 block">Signature Series</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-1 tracking-tight">The Collection</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-stone-800 mb-1 tracking-tight">The Collection</h2>
          </motion.div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto px-2 mb-10">
-        {gridItems.map((perfume, index) => (
-          <FragranceCard key={perfume.id} perfume={perfume} index={index} />
-        ))}
+      <div className="w-full overflow-hidden">
+        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto px-6 md:px-2 mb-10 overflow-x-auto md:overflow-visible snap-x snap-mandatory hide-scrollbar pb-8 md:pb-0">
+          {gridItems.map((perfume, index) => (
+            <div key={perfume.id} className="min-w-[85%] md:min-w-0 snap-center">
+              <FragranceCard perfume={perfume} index={index} />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Refined 3D Instagram CTA with PERMANENT Red/Theme Colors */}
