@@ -41,16 +41,16 @@ export const Hero: React.FC = () => {
       {/* Hero Content: Ultra-Premium Visibility */}
       <motion.div 
         style={{ opacity }}
-        className="relative z-10 w-full max-w-5xl px-6 flex flex-col items-center pt-12"
+        className="relative z-10 w-full max-w-5xl px-6 flex flex-col items-center pt-8 md:pt-12"
       >
           {/* Metadata Tag */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-4"
+            className="mb-3 md:mb-4 scale-90 md:scale-100"
           >
-            <span className="text-[#1C1917] text-[10px] font-bold uppercase tracking-[0.5em] block px-6 py-2 rounded-full border border-[#1C1917]/10 bg-white shadow-sm">
+            <span className="text-[#1C1917] text-[9px] md:text-[10px] font-bold uppercase tracking-[0.5em] block px-5 py-1.5 md:px-6 md:py-2 rounded-full border border-[#1C1917]/10 bg-white shadow-sm">
               Established 2026
             </span>
           </motion.div>
@@ -60,18 +60,18 @@ export const Hero: React.FC = () => {
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-             className="relative w-full max-w-3xl text-center py-6 md:py-8 px-8 rounded-[2rem] border border-white/60 shadow-luxury mb-8 overflow-hidden"
+             className="relative w-full max-w-3xl text-center py-5 md:py-8 px-6 md:px-8 rounded-[1.5rem] md:rounded-[2rem] border border-white/60 shadow-luxury mb-6 md:mb-8 overflow-hidden"
           >
               {/* Stronger Blur Overlay: White/30 with blur-xl */}
               <div className="absolute inset-0 bg-white/30 backdrop-blur-xl z-[-1]" />
               
-              <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] text-[#1C1917] font-medium leading-[1.05] tracking-tighter mb-6 opacity-100">
+              <h1 className="font-serif text-4xl md:text-7xl lg:text-[5.5rem] text-[#1C1917] font-medium leading-[1.1] md:leading-[1.05] tracking-tighter mb-4 md:mb-6 opacity-100">
                 Crafted Scents.<br/>
                 <span className="italic text-[#44403C]">Quiet Luxury.</span>
               </h1>
 
               <div className="relative">
-                <p className="text-[#1C1917] text-lg md:text-xl font-medium max-w-xl mx-auto leading-relaxed opacity-100">
+                <p className="text-[#1C1917] text-base md:text-xl font-medium max-w-xl mx-auto leading-relaxed opacity-100 px-2 md:px-0">
                   Experience an olfactory journey where every note is a whispered secret of stone and heritage.
                 </p>
               </div>
