@@ -240,51 +240,29 @@ export const Heritage: React.FC = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-                
-                {/* Visual Side: Abstract Heritage Architecture */}
-                <motion.div 
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1 }}
-                    className="w-full md:w-1/2 flex justify-center items-center relative h-[400px]"
-                >
-                    {/* Abstract Arch Illustration */}
-                    <div className="relative w-[300px] h-[400px]">
-                        {/* Architectural Arches */}
-                        <div className="absolute inset-0 border border-stone-200 rounded-t-full"></div>
-                        <div className="absolute inset-4 border border-stone-100 rounded-t-full opacity-60"></div>
-                        <div className="absolute inset-8 border border-stone-50 rounded-t-full opacity-40"></div>
-                        
-                        {/* Textured Background */}
-                        <div className="absolute inset-0 rounded-t-full bg-[#FAF9F6] opacity-30 shadow-inner"></div>
-                        
-                        <div className="absolute bottom-0 w-full h-[1px] bg-stone-200"></div>
-                        
-                        {/* Center decorative element */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-stone-100 flex items-center justify-center">
-                            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-stone-50 to-transparent opacity-50"></div>
-                        </div>
-
-                        {/* Floating Image Card */}
-                        <motion.div 
-                             whileHover={{ y: -5 }}
-                             className="absolute bottom-10 -right-4 md:-right-10 w-48 h-64 bg-white rounded-[2rem] shadow-luxury p-2 border border-white"
-                        >
-                            <div className="w-full h-full rounded-[1.5rem] overflow-hidden">
-                                <img src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr_1767922359535.jpeg" className="w-full h-full object-cover grayscale opacity-60" alt="Rooted in Heritage" />
-                            </div>
-                        </motion.div>
-                    </div>
-                </motion.div>
-
-                {/* Text Side */}
+            <div className="max-w-3xl mx-auto text-center">
+                {/* Image at TOP */}
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="w-full md:w-1/2 text-center md:text-left"
+                    transition={{ duration: 1 }}
+                    className="mb-16 flex justify-center"
+                >
+                    <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
+                        <img 
+                            src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr.jpeg" 
+                            alt="Heritage Craftsmanship"
+                            className="w-full h-full object-cover grayscale-[0.1]"
+                        />
+                    </div>
+                </motion.div>
+
+                {/* Content Side */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-900/10 bg-white/50 mb-8 backdrop-blur-sm">
                         <span className="w-2 h-2 rounded-full bg-amber-600/60"></span>
@@ -296,33 +274,16 @@ export const Heritage: React.FC = () => {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800">Heritage.</span>
                     </h2>
                     
-                    <p className="text-stone-600 text-lg font-light leading-relaxed mb-8 max-w-lg mx-auto md:mx-0">
+                    <p className="text-stone-600 text-lg font-light leading-relaxed mb-8 max-w-lg mx-auto">
                         Inspired by the royal durbars and ancient perfumery traditions of India. We blend sacred ingredients—Sandalwood, Saffron, Jasmine—with modern molecular precision.
                     </p>
                     
-                    <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <div className="flex justify-center">
                         <Button variant="outline" className="border-amber-900/20 text-amber-900 hover:bg-amber-50 text-[10px] px-8">
                             Our Story
                         </Button>
                     </div>
-
-                    <motion.div 
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="mt-12 relative max-w-md mx-auto md:mx-0"
-                    >
-                        <div className="relative aspect-[16/10] rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
-                            <img 
-                                src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr.jpeg" 
-                                alt="Heritage Craftsmanship"
-                                className="w-full h-full object-cover grayscale-[0.1] hover:scale-105 transition-transform duration-1000"
-                            />
-                        </div>
-                    </motion.div>
                 </motion.div>
-
             </div>
         </div>
     </section>
