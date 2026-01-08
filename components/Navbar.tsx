@@ -102,7 +102,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen }) => 
                 layout
                 className={`
                     font-serif font-bold tracking-[0.4em] uppercase text-[#1C1917] transition-all duration-700 text-center
-                    ${scrolled ? 'text-sm md:text-xl' : 'text-xl md:text-3xl'}
+                    ${scrolled ? 'text-[10px] md:text-sm' : 'text-sm md:text-lg'}
                 `}
              >
                 AMARY AROMA

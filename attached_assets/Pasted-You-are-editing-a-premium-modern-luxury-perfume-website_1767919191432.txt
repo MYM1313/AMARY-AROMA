@@ -1,0 +1,93 @@
+You are editing a premium, modern luxury perfume website named AMARY AROMA.
+Follow each task strictly. Do not overlap tasks. Do not invent new changes.
+
+────────────────────────
+TASK 1 — TOP NAVIGATION (LOGO TEXT)
+────────────────────────
+- Reduce the font size of the website name “AMARY AROMA” slightly.
+- Keep it elegant, refined, and premium.
+- Improve spacing so it feels balanced and not dominant.
+- Do NOT remove the name.
+- Do NOT add new elements.
+- Ensure correct alignment on desktop and mobile.
+
+────────────────────────
+TASK 2 — INSTAGRAM LINK (GLOBAL FIX)
+────────────────────────
+- Identify every existing CTA or link that currently connects to Instagram.
+- Replace ALL those Instagram links with the following working link:
+
+https://www.instagram.com/amary.aroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+
+- Do NOT add new CTA buttons.
+- Do NOT change button styles or button text.
+- Only replace the URL.
+- All Instagram links must open in a new tab.
+
+────────────────────────
+TASK 3 — ROOTED IN HERITAGE SECTION
+────────────────────────
+- Refine the layout slightly to feel more premium and complete.
+- Add a subtle visual element representing heritage and legacy.
+- Visual inspiration:
+  • Soft architectural forms
+  • Arches or geometry inspired by Indian royal heritage
+  • Paper, stone, or fabric-like textures
+- Color palette: warm ivory, beige, muted gold.
+- Visual must be minimal, low contrast, and editorial.
+- Maintain generous white space.
+- Do NOT overpower typography.
+- Ensure clean stacking on mobile with no overflow or white screen.
+
+────────────────────────
+TASK 4 — ESSENCE OVER EXCESS SECTION
+────────────────────────
+- Enhance the section with a premium visual element.
+- Visual inspiration:
+  • Calm
+  • Balance
+  • Purity
+  • Quiet modern luxury
+- Examples:
+  • Still water
+  • Soft gradients
+  • Abstract minimal textures
+- No perfume bottles.
+- Keep rounded edges and soft shadows.
+- Image should feel intentional, restrained, and expensive.
+- Ensure perfect responsiveness on mobile.
+
+────────────────────────
+TASK 5 — CONNECT WITH AMARY SECTION
+────────────────────────
+- Remove the small subtitle text that says “Available for private consultation”.
+- Do NOT replace it with any new text.
+- Keep spacing, alignment, and layout intact.
+- Maintain a clean, premium appearance.
+
+────────────────────────
+TASK 6 — FOOTER NAVIGATION LINKS
+────────────────────────
+- Ensure all footer navigation text links are fully functional.
+- The following footer links must correctly navigate or scroll to their respective sections/pages:
+  • Home
+  • Fragments
+  • Collections
+  • Why Amary
+  • Experience
+  • Reviews
+  • Rooted in Heritage
+  • Contact
+- Do NOT change the visual styling of the footer.
+- Do NOT add new links.
+- Only fix routing, anchors, or link behavior so everything works properly.
+
+────────────────────────
+GLOBAL STYLE RULES (VERY IMPORTANT)
+────────────────────────
+- Do NOT add extra text.
+- Do NOT change existing copywriting (except where explicitly instructed).
+- Do NOT add animations or effects.
+- Do NOT overload sections.
+- Maintain modern, restrained, editorial luxury.
+- If unsure, choose minimalism.

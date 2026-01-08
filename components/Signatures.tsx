@@ -109,7 +109,7 @@ export const Signatures: React.FC = () => {
         <motion.button
             whileHover={{ y: -3, scale: 1.02 }}
             whileTap={{ y: 1, scale: 0.98 }}
-            onClick={() => window.open('https://instagram.com/amaryaroma', '_blank')}
+            onClick={() => window.open('https://www.instagram.com/amary.aroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')}
             className="group relative flex items-center gap-4 pl-7 pr-8 py-4 rounded-full bg-white border border-rose-200 shadow-[0_8px_25px_-5px_rgba(220,39,67,0.15),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-12px_rgba(220,39,67,0.25),inset_0_1px_0_rgba(255,255,255,1)] hover:border-rose-300 transition-all duration-500 ease-[0.16,1,0.3,1]"
         >
             {/* Soft colored background tint */}

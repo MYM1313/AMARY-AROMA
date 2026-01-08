@@ -77,8 +77,9 @@ export const About: React.FC = () => {
                                 alt="Philosophy"
                                 className="w-full h-full object-cover grayscale-[0.2] contrast-[0.95]"
                             />
-                             {/* Subtle gold sheen overlay */}
-                             <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/10 to-transparent mix-blend-overlay"></div>
+                             {/* Abstract Minimal Texture Overlay */}
+                             <div className="absolute inset-0 bg-gradient-to-tr from-stone-100/40 via-transparent to-stone-50/20 mix-blend-soft-light" />
+                             <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }} />
                         </div>
                     </div>
                 </motion.div>
@@ -242,15 +243,19 @@ export const Heritage: React.FC = () => {
                 >
                     {/* Abstract Arch Illustration */}
                     <div className="relative w-[300px] h-[400px]">
-                        <div className="absolute inset-0 border border-amber-900/10 rounded-t-full"></div>
-                        <div className="absolute inset-4 border border-amber-900/10 rounded-t-full opacity-60"></div>
-                        <div className="absolute inset-8 border border-amber-900/10 rounded-t-full opacity-40"></div>
+                        {/* Architectural Arches */}
+                        <div className="absolute inset-0 border border-stone-200 rounded-t-full"></div>
+                        <div className="absolute inset-4 border border-stone-100 rounded-t-full opacity-60"></div>
+                        <div className="absolute inset-8 border border-stone-50 rounded-t-full opacity-40"></div>
                         
-                        <div className="absolute bottom-0 w-full h-[1px] bg-amber-900/10"></div>
+                        {/* Textured Background */}
+                        <div className="absolute inset-0 rounded-t-full bg-[#FAF9F6] opacity-30 shadow-inner"></div>
+                        
+                        <div className="absolute bottom-0 w-full h-[1px] bg-stone-200"></div>
                         
                         {/* Center decorative element */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-amber-900/20 flex items-center justify-center">
-                            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-50 to-transparent opacity-50"></div>
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full border border-stone-100 flex items-center justify-center">
+                            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-stone-50 to-transparent opacity-50"></div>
                         </div>
 
                         {/* Floating Image Card */}
@@ -259,7 +264,7 @@ export const Heritage: React.FC = () => {
                              className="absolute bottom-10 -right-4 md:-right-10 w-48 h-64 bg-white rounded-[2rem] shadow-luxury p-2 border border-white"
                         >
                             <div className="w-full h-full rounded-[1.5rem] overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1598555819702-892697b0a3c2?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-80" alt="Texture" />
+                                <img src="https://images.unsplash.com/photo-1598555819702-892697b0a3c2?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-60" alt="Texture" />
                             </div>
                         </motion.div>
                     </div>
@@ -320,7 +325,7 @@ export const ContactPanel: React.FC = () => (
                         <motion.button
                             whileHover={{ y: -4, scale: 1.02 }}
                             whileTap={{ y: 2, scale: 0.98 }}
-                            onClick={() => window.open('https://instagram.com', '_blank')}
+                            onClick={() => window.open('https://www.instagram.com/amary.aroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')}
                             className="group flex-1 flex items-center justify-center gap-5 px-8 py-5 rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-10px_rgba(225,48,108,0.12),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 ease-[0.16,1,0.3,1] relative overflow-hidden"
                         >
                             <div className="absolute inset-0 bg-gradient-to-tr from-[#f09433]/5 via-[#dc2743]/5 to-[#bc1888]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -347,7 +352,6 @@ export const ContactPanel: React.FC = () => (
                     
                     <div className="mt-12 flex items-center justify-center gap-4 text-[9px] font-bold uppercase tracking-[0.3em] text-stone-400">
                         <span className="w-12 h-[1px] bg-stone-200"></span>
-                        <span>Available for Private Consultation</span>
                         <span className="w-12 h-[1px] bg-stone-200"></span>
                     </div>
                  </div>

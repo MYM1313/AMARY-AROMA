@@ -19,7 +19,18 @@ export const Footer: React.FC = () => {
           {NAV_ITEMS.filter(i => !i.href.includes('perfume')).map(item => (
             <a 
               key={item.label} 
-              href={item.href} 
+              href={item.href}
+              onClick={(e) => {
+                const sectionId = item.href.replace('#/', '');
+                const target = sectionId ? document.getElementById(sectionId) : null;
+                if (target) {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: target.offsetTop - 100,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
               className="text-stone-500 hover:text-stone-900 text-[10px] uppercase font-bold tracking-[0.15em] transition-colors"
             >
               {item.label}
@@ -28,10 +39,15 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex gap-4 mb-10">
-          <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-stone-400 hover:text-stone-900 border border-stone-100">
+          <a 
+            href="https://www.instagram.com/amary.aroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-stone-400 hover:text-stone-900 border border-stone-100"
+          >
             <Instagram size={18} />
           </a>
-          <a href="#" className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-stone-400 hover:text-stone-900 border border-stone-100">
+          <a href="mailto:hello@amaryaroma.com" className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-stone-400 hover:text-stone-900 border border-stone-100">
             <Mail size={18} />
           </a>
         </div>
