@@ -89,9 +89,10 @@ export const Signatures: React.FC = () => {
     <Section id="collections" className="py-8 md:py-12">
       <div className="text-center mb-8 max-w-2xl mx-auto px-4">
          <motion.div
-           initial={{ opacity: 0, y: 10 }}
+           initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
+           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
          >
             <span className="text-stone-500 text-[10px] font-bold tracking-[0.4em] uppercase mb-2 block">Signature Series</span>
             <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-1 tracking-tight">The Collection</h2>

@@ -266,9 +266,10 @@ export const Heritage: React.FC = () => {
 
                 {/* Content Side */}
                 <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-900/10 bg-white/50 mb-8 backdrop-blur-sm">
                         <span className="w-2 h-2 rounded-full bg-amber-600/60"></span>
