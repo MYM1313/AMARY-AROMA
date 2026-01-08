@@ -218,6 +218,15 @@ export const Reviews: React.FC = () => {
 export const Heritage: React.FC = () => {
   return (
     <section id="heritage" className="relative py-24 bg-[#FDFCF8] overflow-hidden">
+        {/* Heritage Visual Overlay */}
+        <div className="absolute inset-0 z-0 opacity-[0.08] mix-blend-multiply pointer-events-none">
+            <img 
+                src="https://images.unsplash.com/photo-1590732823183-f9a8194a917e?q=80&w=2000&auto=format&fit=crop" 
+                className="w-full h-full object-cover grayscale" 
+                alt="Heritage Texture"
+            />
+        </div>
+        
         {/* Subtle Jali/Lattice Pattern Background */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
             <svg width="100%" height="100%">
