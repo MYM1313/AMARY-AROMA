@@ -6,7 +6,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 export const About: React.FC = () => {
     return (
-        <Section id="about" className="py-12 md:py-20 bg-[#FAFAF9] relative overflow-hidden">
+        <Section id="about" className="py-20 bg-[#FAFAF9] relative overflow-hidden">
             {/* Minimalist Background Geometry */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                  <motion.div 
@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                  <div className="absolute top-[10%] left-[10%] w-[1px] h-[30%] bg-gradient-to-b from-transparent via-amber-900/10 to-transparent" />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 md:gap-24 items-center relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -28,12 +28,12 @@ export const About: React.FC = () => {
                     {/* Decorative accent */}
                     <div className="absolute -left-6 top-2 w-1 h-12 bg-[#1C1917] hidden md:block" />
 
-                    <span className="text-stone-400 text-[10px] font-bold tracking-[0.4em] uppercase mb-4 md:mb-6 flex items-center gap-3">
+                    <span className="text-stone-400 text-[10px] font-bold tracking-[0.4em] uppercase mb-6 flex items-center gap-3">
                         <span className="w-6 h-[1px] bg-stone-300"></span>
                         Our Philosophy
                     </span>
                     
-                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-[1.1] tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-serif text-stone-900 mb-8 leading-[1.1] tracking-tight">
                         Essence over<br/>
                         <span className="italic text-stone-400 font-light relative inline-block">
                             Excess.
@@ -43,8 +43,8 @@ export const About: React.FC = () => {
                         </span>
                     </h2>
                     
-                    <div className="space-y-4 md:space-y-6 pl-2 md:pl-0">
-                        <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed">
+                    <div className="space-y-6 pl-2 md:pl-0">
+                        <p className="text-stone-600 text-lg font-light leading-relaxed">
                            In a world of noise, we choose silence. We believe true luxury lies not in what you add, but in what you take away. 
                         </p>
                         <p className="text-stone-500 text-sm font-medium leading-relaxed tracking-wide border-l border-amber-900/20 pl-6 py-2">
@@ -150,19 +150,17 @@ export const WhyAmary: React.FC = () => {
   ];
 
   return (
-    <section id="why-amary" className="relative py-12 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 md:mb-16 px-6">
+    <section id="why-amary" className="relative py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
             <span className="text-stone-400 uppercase tracking-[0.3em] text-[10px] font-bold block mb-3">Our Distinction</span>
-            <h2 className="text-3xl md:text-5xl font-serif text-stone-900 tracking-tight">Why Amary</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-stone-900 tracking-tight">Why Amary</h2>
         </div>
 
         <div className="w-full overflow-hidden">
-            <div className="flex md:flex-row gap-4 md:gap-6 overflow-x-auto px-6 pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center">
+            <div className="flex gap-6 overflow-x-auto px-6 pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center">
                 {features.map((feature, idx) => (
-                    <div key={idx} className="min-w-[80%] md:min-w-0 snap-center">
-                        <FeatureCard index={idx} title={feature.title} subtitle={feature.subtitle} Icon={feature.icon} image={feature.image} />
-                    </div>
+                    <FeatureCard key={idx} index={idx} title={feature.title} subtitle={feature.subtitle} Icon={feature.icon} image={feature.image} />
                 ))}
             </div>
         </div>
@@ -173,15 +171,15 @@ export const WhyAmary: React.FC = () => {
 
 export const Reviews: React.FC = () => {
   return (
-    <Section id="reviews" className="py-12 md:py-24 bg-[#FAFAF9]">
-        <div className="text-center mb-10 md:mb-12">
+    <Section id="reviews" className="relative py-12 bg-[#FAFAF9]">
+        <div className="text-center mb-12">
              <span className="text-stone-400 text-[10px] font-bold tracking-[0.4em] uppercase mb-2 block">Voices</span>
-            <h2 className="text-3xl md:text-5xl font-serif text-stone-900 tracking-tight">Reviews</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-stone-900 tracking-tight">Reviews</h2>
         </div>
-        <div className="flex gap-4 md:gap-6 overflow-x-auto px-6 pb-8 pt-2 hide-scrollbar snap-x snap-mandatory">
+        <div className="flex gap-6 overflow-x-auto px-6 pb-8 pt-2 hide-scrollbar snap-x snap-mandatory">
             {REVIEWS.map((review) => (
-              <div key={review.id} className="flex-shrink-0 w-[280px] md:w-[320px] snap-center">
-                <div className="p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] h-full flex flex-col justify-between hover:border-stone-200 transition-colors duration-500">
+              <div key={review.id} className="flex-shrink-0 w-[320px] snap-center">
+                <div className="p-8 rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] h-full flex flex-col justify-between hover:border-stone-200 transition-colors duration-500">
                     <div>
                          {/* Stars */}
                          <div className="flex gap-1 mb-5">
@@ -219,7 +217,7 @@ export const Reviews: React.FC = () => {
 
 export const Heritage: React.FC = () => {
   return (
-    <section id="heritage" className="relative py-12 md:py-24 bg-[#FDFCF8] overflow-hidden">
+    <section id="heritage" className="relative py-24 bg-[#FDFCF8] overflow-hidden">
         {/* Heritage Visual Overlay */}
         <motion.div 
             initial={{ opacity: 0 }}
@@ -255,9 +253,9 @@ export const Heritage: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="mb-8 md:mb-16 flex justify-center"
+                    className="mb-16 flex justify-center"
                 >
-                    <div className="relative w-full max-w-[320px] md:max-w-[400px] aspect-[3/4] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
+                    <div className="relative w-full max-w-[400px] aspect-[3/4] rounded-[2rem] overflow-hidden shadow-luxury border border-stone-100 bg-stone-50">
                         <img 
                             src="https://ik.imagekit.io/jabzmiuta/Whisk_50ee0eaaf88670596ee4346877db13f9dr.jpeg" 
                             alt="Heritage Craftsmanship"
@@ -273,17 +271,17 @@ export const Heritage: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-900/10 bg-white/50 mb-6 md:mb-8 backdrop-blur-sm">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-900/10 bg-white/50 mb-8 backdrop-blur-sm">
                         <span className="w-2 h-2 rounded-full bg-amber-600/60"></span>
                         <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-amber-900/60">Legacy</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-tight">
+                    <h2 className="text-4xl md:text-6xl font-serif text-stone-900 mb-8 leading-tight">
                         Rooted in <br/>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-800">Heritage.</span>
                     </h2>
                     
-                    <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed mb-8 max-w-lg mx-auto">
+                    <p className="text-stone-600 text-lg font-light leading-relaxed mb-8 max-w-lg mx-auto">
                         Inspired by the royal durbars and ancient perfumery traditions of India. We blend sacred ingredients—Sandalwood, Saffron, Jasmine—with modern molecular precision.
                     </p>
                     
