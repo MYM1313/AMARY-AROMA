@@ -73,7 +73,7 @@ export const About: React.FC = () => {
                         
                         <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-2xl z-10 bg-white">
                             <img 
-                                src="https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=800&auto=format&fit=crop"
+                                src="https://ik.imagekit.io/jabzmiuta/Whisk_1e99b6b9d5df174959842ed09be8ff8bdr.jpeg"
                                 alt="Philosophy"
                                 className="w-full h-full object-cover grayscale-[0.2] contrast-[0.95]"
                             />
