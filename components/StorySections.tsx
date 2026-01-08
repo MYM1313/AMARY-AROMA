@@ -33,7 +33,7 @@ export const About: React.FC = () => {
                         Our Philosophy
                     </span>
                     
-                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-[1.1] tracking-tight">
+                    <h2 className="text-2xl md:text-6xl font-serif text-stone-900 mb-6 md:mb-8 leading-[1.1] tracking-tight">
                         Essence over<br/>
                         <span className="italic text-stone-400 font-light relative inline-block">
                             Excess.
@@ -44,19 +44,19 @@ export const About: React.FC = () => {
                     </h2>
                     
                     <div className="space-y-4 md:space-y-6 pl-2 md:pl-0">
-                        <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed">
+                        <p className="text-stone-600 text-sm md:text-lg font-light leading-relaxed">
                            In a world of noise, we choose silence. We believe true luxury lies not in what you add, but in what you take away. 
                         </p>
-                        <p className="text-stone-500 text-sm font-medium leading-relaxed tracking-wide border-l border-amber-900/20 pl-6 py-2">
+                        <p className="text-stone-500 text-[11px] md:text-sm font-medium leading-relaxed tracking-wide border-l border-amber-900/20 pl-6 py-2">
                            Every bottle is a study in restraint—a quiet conversation between the wearer and the world, composed of only the most essential notes.
                         </p>
                     </div>
 
-                    <div className="mt-10 flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full border border-stone-200 flex items-center justify-center text-stone-400">
-                             <Scale size={18} strokeWidth={1.5} />
+                    <div className="mt-8 md:mt-10 flex items-center gap-4">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-stone-200 flex items-center justify-center text-stone-400">
+                             <Scale size={16} md:size={18} strokeWidth={1.5} />
                         </div>
-                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-stone-400">Mastery through Balance</span>
+                        <span className="text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] text-stone-400">Mastery through Balance</span>
                     </div>
                 </motion.div>
                 
@@ -150,17 +150,17 @@ export const WhyAmary: React.FC = () => {
   ];
 
   return (
-    <section id="why-amary" className="relative py-12 md:py-24 bg-white">
+    <section id="why-amary" className="relative py-8 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 md:mb-16 px-6">
+        <div className="text-center mb-10 md:mb-16 px-6">
             <span className="text-stone-400 uppercase tracking-[0.3em] text-[10px] font-bold block mb-3">Our Distinction</span>
             <h2 className="text-3xl md:text-5xl font-serif text-stone-900 tracking-tight">Why Amary</h2>
         </div>
 
         <div className="w-full overflow-hidden">
-            <div className="flex md:flex-row gap-4 md:gap-6 overflow-x-auto px-6 pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center">
+            <div className="flex md:flex-row gap-4 md:gap-6 overflow-x-auto px-6 pb-12 pt-2 hide-scrollbar snap-x snap-mandatory justify-start md:justify-center items-center scroll-smooth">
                 {features.map((feature, idx) => (
-                    <div key={idx} className="min-w-[80%] md:min-w-0 snap-center">
+                    <div key={idx} className="min-w-[75%] md:min-w-0 snap-center">
                         <FeatureCard index={idx} title={feature.title} subtitle={feature.subtitle} Icon={feature.icon} image={feature.image} />
                     </div>
                 ))}
@@ -173,15 +173,15 @@ export const WhyAmary: React.FC = () => {
 
 export const Reviews: React.FC = () => {
   return (
-    <Section id="reviews" className="py-12 md:py-24 bg-[#FAFAF9]">
-        <div className="text-center mb-10 md:mb-12">
+    <Section id="reviews" className="py-8 md:py-24 bg-[#FAFAF9]">
+        <div className="text-center mb-8 md:mb-12">
              <span className="text-stone-400 text-[10px] font-bold tracking-[0.4em] uppercase mb-2 block">Voices</span>
-            <h2 className="text-3xl md:text-5xl font-serif text-stone-900 tracking-tight">Reviews</h2>
+            <h2 className="text-2xl md:text-5xl font-serif text-stone-900 tracking-tight">Reviews</h2>
         </div>
-        <div className="flex gap-4 md:gap-6 overflow-x-auto px-6 pb-8 pt-2 hide-scrollbar snap-x snap-mandatory">
+        <div className="flex gap-4 md:gap-6 overflow-x-auto px-6 pb-8 pt-2 hide-scrollbar snap-x snap-mandatory scroll-smooth">
             {REVIEWS.map((review) => (
-              <div key={review.id} className="flex-shrink-0 w-[280px] md:w-[320px] snap-center">
-                <div className="p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] h-full flex flex-col justify-between hover:border-stone-200 transition-colors duration-500">
+              <div key={review.id} className="flex-shrink-0 w-[240px] md:w-[320px] snap-center">
+                <div className="p-6 md:p-8 rounded-[1.25rem] md:rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] h-full flex flex-col justify-between hover:border-stone-200 transition-colors duration-500">
                     <div>
                          {/* Stars */}
                          <div className="flex gap-1 mb-5">
@@ -300,34 +300,34 @@ export const Heritage: React.FC = () => {
 };
 
 export const ContactPanel: React.FC = () => (
-    <Section className="py-20 bg-white" id="connection">
-        <div className="max-w-4xl mx-auto px-6">
+    <Section className="py-8 md:py-20 bg-white" id="connection">
+        <div className="max-w-4xl mx-auto px-4 md:px-6">
              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="relative bg-[#FAFAF9] rounded-[4rem] p-12 md:p-20 text-center border border-stone-200 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.05),inset_0_1px_1px_rgba(255,255,255,1)] overflow-hidden"
+                className="relative bg-[#FAFAF9] rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-20 text-center border border-stone-200 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.05),inset_0_1px_1px_rgba(255,255,255,1)] overflow-hidden"
              >
                  {/* Subtle Noise Texture */}
                  <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>
                  
                  <div className="relative z-10">
                     <span className="text-stone-400 text-[10px] font-bold tracking-[0.4em] uppercase mb-4 block">Personal Concierge</span>
-                    <h2 className="text-4xl md:text-6xl font-serif text-stone-900 mb-12 tracking-tight">Connect with AMARY</h2>
+                    <h2 className="text-3xl md:text-6xl font-serif text-stone-900 mb-8 md:mb-12 tracking-tight">Connect with AMARY</h2>
                     
-                    <div className="flex flex-col md:flex-row justify-center gap-6 max-w-2xl mx-auto">
+                    <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 max-w-2xl mx-auto">
                         {/* 3D Instagram CTA */}
                         <motion.button
                             whileHover={{ y: -4, scale: 1.02 }}
                             whileTap={{ y: 2, scale: 0.98 }}
                             onClick={() => window.open('https://www.instagram.com/amary.aroma?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')}
-                            className="group flex-1 flex items-center justify-center gap-5 px-8 py-5 rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-10px_rgba(225,48,108,0.12),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 ease-[0.16,1,0.3,1] relative overflow-hidden"
+                            className="group flex-1 flex items-center justify-center gap-4 md:gap-5 px-6 md:px-8 py-4 md:py-5 rounded-[1.5rem] md:rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-10px_rgba(225,48,108,0.12),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 ease-[0.16,1,0.3,1] relative overflow-hidden"
                         >
                             <div className="absolute inset-0 bg-gradient-to-tr from-[#f09433]/5 via-[#dc2743]/5 to-[#bc1888]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             <div className="relative z-10 p-2 bg-stone-50 rounded-xl text-[#dc2743] shadow-[inset_0_1px_2px_rgba(0,0,0,0.05)] group-hover:bg-white group-hover:shadow-md transition-all">
-                                <Instagram size={20} strokeWidth={2} />
+                                <Instagram size={18} strokeWidth={2} />
                             </div>
-                            <span className="relative z-10 text-stone-800 font-bold text-xs uppercase tracking-[0.2em] group-hover:text-black transition-colors">Instagram</span>
+                            <span className="relative z-10 text-stone-800 font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] group-hover:text-black transition-colors">Instagram</span>
                         </motion.button>
 
                         {/* 3D Email CTA */}
@@ -335,13 +335,13 @@ export const ContactPanel: React.FC = () => (
                             whileHover={{ y: -4, scale: 1.02 }}
                             whileTap={{ y: 2, scale: 0.98 }}
                             onClick={() => window.open('mailto:hello@amaryaroma.com', '_blank')}
-                            className="group flex-1 flex items-center justify-center gap-5 px-8 py-5 rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-10px_rgba(30,58,138,0.1),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 ease-[0.16,1,0.3,1] relative overflow-hidden"
+                            className="group flex-1 flex items-center justify-center gap-4 md:gap-5 px-6 md:px-8 py-4 md:py-5 rounded-[1.5rem] md:rounded-[2rem] bg-white border border-stone-100 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.04),inset_0_1px_0_rgba(255,255,255,1)] hover:shadow-[0_20px_40px_-10px_rgba(30,58,138,0.1),inset_0_1px_0_rgba(255,255,255,1)] transition-all duration-500 ease-[0.16,1,0.3,1] relative overflow-hidden"
                         >
                             <div className="absolute inset-0 bg-stone-900/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             <div className="relative z-10 p-2 bg-stone-50 rounded-xl text-stone-600 shadow-[inset_0_1px_2px_rgba(0,0,0,0.05)] group-hover:bg-white group-hover:shadow-md group-hover:text-stone-900 transition-all">
-                                <Mail size={20} strokeWidth={2} />
+                                <Mail size={18} strokeWidth={2} />
                             </div>
-                            <span className="relative z-10 text-stone-800 font-bold text-xs uppercase tracking-[0.2em] group-hover:text-black transition-colors">Email Us</span>
+                            <span className="relative z-10 text-stone-800 font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] group-hover:text-black transition-colors">Email Us</span>
                         </motion.button>
                     </div>
                     
